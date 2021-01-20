@@ -1,3 +1,9 @@
+# PULSE Any Image
+
+You can do it from following link
+
+https://colab.research.google.com/drive/15Oi0D6djIcWTufLRP03rT5ZOPWkhvnvx
+
 # PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models
 Code accompanying CVPR'20 paper of the same title. Paper link: https://arxiv.org/pdf/2003.03808.pdf
 
