@@ -1,8 +1,18 @@
 # PULSE Any Image
 
-You can do it from following link
+## Summary
+
+This repository is used to PULSE any image including not face.
+
+You can do it from following link.
+Some example and result is on the `images` directory
 
 https://colab.research.google.com/drive/15Oi0D6djIcWTufLRP03rT5ZOPWkhvnvx
+
+## LICENSE related things
+
+This is forked from [adamian98/pulse](https://github.com/adamian98/pulse).
+I made this repository because Github public fork doesn't allow GIT LFS.
 
 # PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models
 Code accompanying CVPR'20 paper of the same title. Paper link: https://arxiv.org/pdf/2003.03808.pdf
