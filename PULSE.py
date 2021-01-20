@@ -60,7 +60,9 @@ class PULSE(torch.nn.Module):
                 lr_schedule,
                 save_intermediate,
                 **kwargs):
-
+        start = torch.cuda.Event(enable_timing=True)
+        end = torch.cuda.Event(enable_timing=True)
+        start.record()
         if seed:
             torch.manual_seed(seed)
             torch.cuda.manual_seed(seed)
@@ -177,3 +179,6 @@ class PULSE(torch.nn.Module):
             yield (gen_im.clone().cpu().detach().clamp(0, 1),loss_builder.D(best_im).cpu().detach().clamp(0, 1))
         else:
             print("Could not find a face that downscales correctly within epsilon")
+        end.record()
+        torch.cuda.synchronize()
+        if self.verbose: print(start.elapsed_time(end))
